@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 5\3. Event Handling\FX_Events"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 5\2. Graphical User Interfaces\FX_GUIs"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 5\1. Files, IO &amp; Exceptions\FilesIO"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 3\3. Inheritance\Inheritance"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 3\3. Inheritance\CompositionVsInheritance"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 3\1. Interface Types\PortfolioPlayer"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 3\1. Interface Types\InterfaceTypes"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\week 2\3. Composition &amp; Aggregation\PortfolioRegister"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\week 2\3. Composition &amp; Aggregation\Aggregation"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\week 2\3. Composition &amp; Aggregation\StartingPlayer"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\week 2\3. Composition &amp; Aggregation\Composition"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\week 2\2. The ArrayList Collection\ArrayLists"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\week 2\More Custom Classes\MoreCustomClasses"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 1\3 - Custom Classes\MyFirstClasses"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 1\2 - Using Objects\UsingObjects"/>
+			<item value="C:\Users\brhex\OneDrive\Documents\Uni\Year 2\Object-Oriented Development\Week 1\1 - Basic Java Programs\BasicJavaPrograms"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+		<section name="ExternalProjectImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="291"/>
+			<item key="DIALOG_Y_ORIGIN" value="107"/>
+			<item key="DIALOG_WIDTH" value="525"/>
+			<item key="DIALOG_HEIGHT" value="716"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="333"/>
+			<item key="DIALOG_Y_ORIGIN" value="7"/>
+			<item key="DIALOG_WIDTH" value="885"/>
+			<item key="DIALOG_HEIGHT" value="626"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="513"/>
+		<item key="DIALOG_Y_ORIGIN" value="27"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="582"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.fx.ide.jdt.ui.javafx"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.fx.ide"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+		</section>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="434"/>
+		<item key="DIALOG_Y_ORIGIN" value="215"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

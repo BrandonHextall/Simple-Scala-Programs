@@ -1,0 +1,74 @@
+package view;
+
+import java.time.LocalDate;
+
+import javafx.collections.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.HPos;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import model.Course;
+import model.Name;
+
+public class SelectModulesPane extends StackPane {
+	private ComboBox<Course> cboCourses;
+	private DatePicker inputDate;
+	private TextField txtFirstName, txtSurname,  txtPnumber, txtEmail;
+	private Button btnCreateProfile;
+	private CourseView txts1, txtu3_4, txts2, txts3_4;
+	
+	public SelectModulesPane() {
+		//styling
+		this.setAlignment(Pos.CENTER);
+		
+		//create hboxes
+		HBox s1Box = new HBox(8);
+		HBox u3_4Box = new HBox(8);
+		HBox s2Box = new HBox(8);
+		HBox s3_4Box = new HBox(8);
+		HBox ar3_4Box = new HBox(8);
+		
+		//create labels
+		Label s1Title = new Label("Selected Block 1 Modules");
+		Label u3_4Title = new Label("Unselected Block 3/4 Modules");
+		Label s2Title = new Label("Selected Block 2 Modules");
+		Label s3_4Title = new Label("Selected Block 3/4 Modules");
+		Label ccTitle = new Label("Current Credits: ");
+		
+		//create listviews
+		ObservableList<String> sb1OList = FXCollections.observableArrayList(
+				"m1", "m2", "m3", "m4");
+		txts1 = new CourseView<String>();
+		txtu3_4 = new CourseView<String>();
+		txts2 = new CourseView<String>();
+		txts3_4 = new CourseView<String>();
+		
+		s1Box.getChildren().addAll(s1Title, txts1);
+		u3_4Box.getChildren().addAll(u3_4Title, txtu3_4);
+		s2Box.getChildren().addAll(s2Title, txts2);
+		s3_4Box.getChildren().addAll(s3_4Title, txts3_4);
+		ar3_4Box.getChildren().addAll();
+		
+		this.getChildren().addAll(s1Box, u3_4Box, s2Box, s3_4Box, ar3_4Box);
+		//this.getChildren().addAll(s1Title, txts1, u3_4Title, s2Title, s3_4Title, ccTitle);
+		
+	}
+	
+	private class CourseView<T> extends ListView<T> {
+		public CourseView() {
+			super();
+			this.setEditable(false);
+			this.setPrefSize(300, 150);
+		}
+	}
+}

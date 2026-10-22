@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="120"/>
+			<item value="resetModules"/>
+			<item value="credits"/>
+			<item value="confirm"/>
+			<item value="save"/>
+			<item value="model"/>
+			<item value="reset"/>
+			<item value="createModulesAndCourses"/>
+			<item value="#"/>
+			<item value="courses"/>
+			<item value="btnCreateProfile"/>
+			<item value="fx"/>
+			<item value="sb1OList"/>
+			<item value="DatePicker"/>
+			<item value="ComboBox"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,66 @@
+package view;
+
+import java.time.LocalDate;
+
+import javafx.collections.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.HPos;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import model.Course;
+import model.Name;
+
+public class SelectModulesPane extends GridPane {
+	private ComboBox<Course> cboCourses;
+	private DatePicker inputDate;
+	private TextField txtFirstName, txtSurname,  txtPnumber, txtEmail;
+	private Button btnCreateProfile;
+	private CourseView txtsb1, txtub3_4, txtsb2, txtsb3_4;
+	
+	public SelectModulesPane() {
+		//styling
+		this.setVgap(15);
+		this.setHgap(20);
+		this.setAlignment(Pos.CENTER);
+		
+		//create labels
+		Label sb1Title = new Label("Selected Block 1 Modules");
+		Label ub3_4Title = new Label("Unselected Block 3/4 Modules");
+		Label sb2Title = new Label("Selected Block 2 Modules");
+		Label sb3_4Title = new Label("Selected Block 3/4 Modules");
+		Label ccTitle = new Label("Current Credits: ");
+		
+		//create listview
+		ObservableList<String> sb1OList = FXCollections.observableArrayList(
+				"m1", "m2", "m3", "m4");
+		txtsb1 = new CourseView<String>();
+		txtub3_4 = new CourseView<String>();
+		txtsb2 = new CourseView<String>();
+		txtsb3_4 = new CourseView<String>();
+		
+		this.add(sb1Title, 0, 0);
+		this.add(txtsb1, 1, 1);
+		this.add(ub3_4Title, 2, 0);
+		this.add(sb2Title, 0, 1);
+		this.add(sb3_4Title, 2, 1);
+		this.add(ccTitle, 4, 0);
+		
+	}
+	
+	private class CourseView<T> extends ListView<T> {
+		public CourseView() {
+			super();
+			this.setEditable(false);
+			this.setPrefSize(300, 150);
+		}
+	}
+}

@@ -1,0 +1,108 @@
+package lib;
+
+import java.util.*;
+
+public class Register {
+	
+	//Fields
+	private ArrayList<Name> list;
+	private int capacity;
+	
+	
+	// Temporary method to print stuff quicker
+	public void print(String line) {
+		System.out.println(line);
+	}
+	public void print(int line) {
+		System.out.println(line);
+	}
+	public void print(StringBuilder line) {
+		System.out.println(line);
+	}
+	
+	
+	//Constructors
+	/** Creates new instance of Register using default values.  Default size is 25*/
+	public Register() {
+		list = new ArrayList<Name>();
+		capacity = 25;
+	}
+	
+	/** Creates new instance of Register using given size. */
+	public Register(int capacity) {
+		list = new ArrayList<Name>();
+		capacity = capacity;
+	}
+	
+	//Methods
+	/* Adds a new name to register.
+	 * @param name the new name for the register. */
+	public void addName(Name name) {
+		if (list.size() < capacity) list.add(name);
+	}
+	
+	/** Adds multiple names to register.
+	 * @param names the new names for the register. */
+	public void addNames(ArrayList<Name> names) {
+		//print(list.size());
+		names.forEach(name -> {
+			list.add(name);
+			print(this.toString());
+		});
+	}
+	
+	/** Returns name in register based on index. 
+	 * @param index position of name to return. */
+	public Name getName(int index) {
+		return list.get(index);
+	}
+	
+	/** Returns the register. 
+	 * @return register*/
+	public ArrayList getRegister() {
+		return list;
+	}
+	
+	/** Returns capacity of register.
+	 * @return capacity of register. */
+	public int getCapacity() {
+		 return capacity;
+	}
+	
+	/** Returns size of register.
+	 * @return size of register. */
+	public int getRegisterSize() {
+		//System.out.println(list.size());
+		return list.size();
+	}
+	
+	/** Returns room capacity.
+	 * @return capacity of register. */
+	public int getCapacityOfRoom() {
+		return capacity;
+	}
+	 
+	/** Removes name from register based on index and returns the removed name.
+	  * @param index position to remove.
+	  * @return removed name. */
+	public Name removeName(int index) {
+		Name removedName = list.get(index);
+		list.remove(index);
+		return removedName;
+	}
+	
+	/** Clears the register. */
+	public void clearTheRegister() {
+		list.clear();
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder str = new StringBuilder();
+		str.append("Register:[size:" + list.size());
+		list.forEach(name -> str.append(", " + name));
+		str.append("]");
+		print(str);
+		return str.toString();
+	}
+}

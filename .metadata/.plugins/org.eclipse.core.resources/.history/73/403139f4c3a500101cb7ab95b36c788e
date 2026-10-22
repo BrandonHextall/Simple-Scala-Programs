@@ -1,0 +1,23 @@
+package lib;
+
+import java.util.*;
+
+public class Register {
+	
+	//Fields
+	private ArrayList<Name> list;
+	private int capacity;
+	
+	//Constructors
+	/** Creates new instance of Register using default values.  Default capacity is 25*/
+	public Register() {
+		list = new ArrayList<Name>();
+		capacity = 25;
+	}
+	
+	/** Creates new instance of Register using given capacity. */
+	public Register(int capacity) {
+		list = new ArrayList<Name>();
+		capacity = capacity;
+	}
+}

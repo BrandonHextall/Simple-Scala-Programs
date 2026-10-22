@@ -1,0 +1,117 @@
+package view;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.VBox;
+import model.*;
+
+public class OverviewSelectionPane extends GridPane {
+    private HBox profilebox, selresbox, savebox;
+    private StudentProfile model;
+    private TextArea profile, selmod, resmod;
+    private Button save;
+
+    public OverviewSelectionPane(StudentProfile model) {
+    	this.model = model;
+        this.setAlignment(Pos.CENTER);
+        this.setPadding(new Insets(20));
+        this.setVgap(10);
+        
+        var always = Priority.ALWAYS;
+
+        //create HBoxes
+        profilebox = new HBox(10);
+        selresbox = new HBox(10);
+        savebox = new HBox();
+
+        //create TextAreas
+        profile = new TextArea("Profile will appear here");
+        selmod = new TextArea("Selected modules will appear here");
+        resmod = new TextArea("Reserved modules will appear here");
+        save = new Button("Save Overview");
+        
+        //sizing
+        save.setPrefSize(100, 30);
+        
+        //padding
+        profilebox.setPadding(new Insets(0, 0, 20, 0));
+        savebox.setPadding(new Insets(10, 0, 0, 0));
+
+        //scaling
+        HBox.setHgrow(profile, always);
+        HBox.setHgrow(selmod, always);
+        HBox.setHgrow(resmod, always);
+        HBox.setHgrow(profilebox, always);
+        HBox.setHgrow(selresbox, always);
+        GridPane.setVgrow(profile, always);
+        GridPane.setVgrow(selmod, always);
+        GridPane.setVgrow(resmod, always);
+        GridPane.setHgrow(profilebox, always);
+        GridPane.setVgrow(profilebox, always);
+        GridPane.setHgrow(selresbox, always);
+        GridPane.setVgrow(selresbox, always);
+
+        //alignment
+        profilebox.setAlignment(Pos.CENTER);
+        selresbox.setAlignment(Pos.CENTER);
+        savebox.setAlignment(Pos.CENTER);
+        
+        //adding nodes to container
+        profilebox.getChildren().add(profile);
+        selresbox.getChildren().addAll(selmod, resmod);
+        savebox.getChildren().add(save);
+
+        // Add boxes to GridPane
+        this.add(profilebox, 0, 0);
+        this.add(selresbox, 0, 1);
+        this.add(savebox, 0, 2);
+    }
+    
+    //Loads student details
+    public void loadStudentDetails() {
+    	
+    	//adding student details
+    	StringBuilder stuDet = new StringBuilder();
+    	stuDet.append("Name: " + model.getStudentName().getFirstName() + " " + model.getStudentName().getFamilyName() + "\n");
+    	stuDet.append("Pnumber: " + model.getStudentPnumber() + "\n");
+    	stuDet.append("Email: " + model.getStudentEmail() + "\n");
+    	String date = model.getSubmissionDate().toString().replace("-", "/");
+    	stuDet.append("Date Submitted: " + date + "\n");
+    	stuDet.append("Course: " + model.getStudentCourse());
+    	profile.setText(stuDet.toString());
+    	
+    	//displaying selected modules
+    	StringBuilder modules = new StringBuilder("Selected modules:\n============\n");
+    	model.getAllSelectedModules().forEach(m -> {
+    		modules.append("Module Code: " + m.getModuleCode() + ", ");
+    		modules.append("Module Name: " + m.getModuleName() + ", \n");
+    		modules.append("Credits: " + m.getModuleCredits() + ", ");
+    		modules.append("Mandatory: " + (m.isMandatory() ? "yes" : "no") + ", ");
+    		modules.append("Block: " + (m.getRunPlan() == Block.BLOCK_1 ? "Block 1" : m.getRunPlan() == Block.BLOCK_2 ? "Block 2" : "Block 3/4") + "\n\n");
+    		selmod.setText(modules.toString());
+    	});
+    	
+    	StringBuilder reserve = new StringBuilder("Reserve modules:\n============\n");
+    	model.getAllReservedModules().forEach(r -> {
+    		reserve.append("Module Code: " + r.getModuleCode() + ", ");
+    		reserve.append("Module Name: " + r.getModuleName() + ", \n");
+    		reserve.append("Credits: " + r.getModuleCredits() + ", ");
+    		reserve.append("Mandatory: " + (r.isMandatory() ? "yes" : "no") + ", ");
+    		reserve.append("Block: " + (r.getRunPlan() == Block.BLOCK_1 ? "Block 1" : r.getRunPlan() == Block.BLOCK_2 ? "Block 2" : "Block 3/4") + "\n\n");
+    		resmod.setText(reserve.toString());
+    	});
+    }
+    
+    //allows event handler to be added
+    public void addSaveOverviewHandler(EventHandler<ActionEvent> e) {
+    	save.setOnAction(e);
+    }
+}

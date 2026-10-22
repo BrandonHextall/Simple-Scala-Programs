@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/brhex/Downloads/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Users/brhex/Downloads/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412/jre/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Users/brhex/Downloads/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412/jre/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/brhex/Downloads/eclipse/plugins/org.junit_4.13.2.v20240929-1000.jar
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/brhex/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=21
+org.eclipse.jdt.core.compiler.compliance=21
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=21
+org.eclipse.jdt.core.userLibrary.JFX=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="true" version\="2">\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.base.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.controls.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.fxml.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.graphics.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.media.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.swing.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx.web.jar"/>\r\n\t<archive path\="C\:/Users/brhex/OneDrive/Documents/Uni/Year 2/Object-Oriented Development/Eclipse/javafx-sdk-21.0.9/lib/javafx-swt.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.base.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.controls.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.fxml.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.graphics.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.media.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.properties"/>\r\n\t<archive path\="/JFX/lib/javafx.swing.jar"/>\r\n\t<archive path\="/JFX/lib/javafx.web.jar"/>\r\n\t<archive path\="/JFX/lib/javafx-swt.jar"/>\r\n</userlibrary>\r\n
