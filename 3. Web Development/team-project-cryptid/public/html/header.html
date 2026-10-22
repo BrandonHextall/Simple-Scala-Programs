@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-sm navbar-light custom-navbar" aria-label="Main navigation">
+    <div class="container-fluid">
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible nav links -->
+        <section class="collapse navbar-collapse ms-auto" id="mainNavbar" aria-label="Main navigation bar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link px-3" href="/home" aria-label="Home button">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="/leaderboard" aria-label="Leaderboard link">Leaderboard</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="/progression" aria-label="Progression link">Progression</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="/calendar" aria-label="Calendar link">Calendar</a></li>
+            </ul>
+        </section>
+
+        <!-- Profile picture -->
+        <section id="profile-dropdown" class="dropdown ms-auto">
+            <a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/profile-placeholder.jpg" alt="User" class="rounded-circle profile-img" aria-label="User's profile picture in page header">
+            </a>
+
+            <!-- Profile dropdown -->
+            <ul class="dropdown-menu dropdown-menu-end" aria-label="profileDropdown">
+                <li><a class="dropdown-item" href="/profile" aria-label="My Profile link">My Profile</a></li>
+                <li><a class="dropdown-item" href="/progression" aria-label="My Progress link">My Progress</a></li>
+                <li><a class="dropdown-item" href="/preferences" aria-label="Preferences link">Preferences</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/logout" aria-label="Sign Out link">Sign Out</a></li>
+            </ul>
+        </section>
+    </div>
+</nav>

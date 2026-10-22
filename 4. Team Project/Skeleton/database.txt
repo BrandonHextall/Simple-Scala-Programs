@@ -1,0 +1,7 @@
+Server Name: v00egd00002l.lec-admin.dmu.ac.uk
+*choose SQL Server Authentifiaction
+Username: P2867907
+Password: TheChickenBrothers5
+*leave name default
+*set encrypt false
+*Trust server certificate false

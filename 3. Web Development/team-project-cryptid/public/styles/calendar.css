@@ -1,0 +1,137 @@
+@media (max-width: 1070px) {
+    body {
+        overflow-y: visible !important;
+        width: fit-content !important;
+        main {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #calendar-container {
+        margin: 0px !important;
+        transform: scale(1) !important;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+    margin-top: 10px;
+}
+
+.calendar-grid div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* makes width = height */
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+}
+
+.day-header {
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+.today {
+    background-color: lightblue;
+}
+
+.cell-shrink {
+    width: 40% !important;
+    text-align: center;
+}
+
+/* Highlight selected day */
+.selected {
+    background-color: #c8facc; /* light green */
+    color: black; /* make sure text is readable */
+}
+
+#calendar-container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 30px;
+    transform: scale(1.5);
+    transform-origin: top left;
+}
+
+#task-panes {
+    display: flex;
+    float: right !important;
+    margin-left: 350px !important;
+    margin: 30px;
+    width: 50%;
+}
+
+#daily-tasks {
+    width: 100%;
+    table, tr, td {
+        table-layout: fixed;
+        width: 100%;
+        border: 1px solid black;
+        vertical-align: middle;
+        height: 60px !important;
+        padding: 5px;
+    }
+    td {
+        user-select: none;
+        z-index: -1;
+    }
+    #daily-tasks-date {
+        font-size: 3rem;
+    }
+}
+
+#task-table-container {
+    max-height: 370px;
+    overflow-y: auto;
+}
+
+#add-task-btn {
+    position: relative;
+    display: inline;
+    left: calc(50% - calc(200px / 2));
+    top: 10px !important;
+    width: fit-content;
+    text-wrap: wrap;
+    align-self: center !important;
+    width: 200px;
+    height: 60px !important;
+    font-size: 1.7rem;
+    margin-bottom: 10px !important;
+}
+
+#calendar div {
+    user-select: none;
+}
+
+/*
+    Strangely the task-panes properties need to be separated from the rest of the main @media styling.
+    This is assumed to be due to the property being applied initially and the rest of the properties applied after, overriding the intended styling.
+    However the !important cannot be removed from the margin properties in either styling property otherwise the div will have no margin.
+*/
+@media (max-width: 1070px) {
+    #task-panes {
+        margin: 20px 0 10px 0 !important;
+        width: 90%;
+    }
+}

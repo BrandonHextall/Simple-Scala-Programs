@@ -1,0 +1,167 @@
+@media (max-width: 1230px) {
+    main {
+        /* transform: scale(0.7) !important;
+        transform-origin: top left;
+        width: 142.857142857% !important; */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        #side-r {
+            margin-top: 0px;
+        }
+    }
+    
+    body {
+        max-height: 1000px;
+    }
+
+    .task-table {
+        height: 100% !important;
+        td {
+            font-size: 1.2rem;
+        }
+        table {
+            min-width: 300px !important;
+            width: 100% !important;
+        }
+    }
+
+    table {
+        width: 100px !important;
+    }
+
+    #view-all-tasks-btn, #add-task-btn {
+        font-size: 1.2rem !important;
+    }
+
+    #add-task-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    #recently-collected {
+        margin-top: 10px !important;
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
+
+        img {
+            max-width: 100px;
+        }
+    }
+
+    #side-r {
+        margin-top: -200px !important;
+    }
+}
+
+body {
+    height: fit-content !important;
+}
+
+table, table tr, table td {
+    text-align: center !important;
+    width: 300px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+.d-flex {
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+.add-task-btn {
+    width: 50px;
+    height: 50px;
+    line-height: 1em;
+    text-align: center;
+    text-wrap: inherit;
+    font-size: 1.1rem;
+}
+
+.task-table {
+    width: 100%;
+    height: 500px !important;
+    max-height: 900px !important;
+    table {
+        min-width: 600px;
+    }
+    table , tr, td {
+        table-layout: fixed;
+        padding: 5px;
+        height: 55px;
+    }
+}
+
+#user-details {
+    width: fit-content;
+    min-width: 200px;
+    max-width: 445px;
+    padding: 0 !important;
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+
+    * {
+        margin: 0;
+    }
+
+    #username {
+        font-size: 2.5rem;
+        text-wrap: wrap;
+        padding: 15px;
+    }
+
+    section.rounded-circle {
+        height: 40px !important;
+        width: 40px !important;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    img {
+        max-width: 40px;
+    }
+}
+
+#recently-collected {
+    max-width: 700px;
+    width: 700px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    border: 3px solid black;
+
+    img {
+        max-width: 190px;
+        width: 100%;
+    }
+}
+
+.recent-activity {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+
+.divider {
+    margin: 10px 50px;
+}
+
+#side-r {
+    margin-top: -100px;
+    p {
+        display: inline;
+        font-size: 2rem;
+    }
+}
+
+#side-L {
+    width: 100%;
+}
+
+#button-container {
+    display: flex;
+    border: none;
+    width: 300% !important;
+    justify-content: center;
+}
