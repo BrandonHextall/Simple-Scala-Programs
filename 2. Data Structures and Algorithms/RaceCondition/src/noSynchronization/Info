@@ -1,0 +1,9 @@
+Example 1: Simple Concurrent Threads (Race Condition)
+X Problem: No synchronization
+
+What happens?
+
+- Thwo threads update the same variable
+- Expected result: 2000
+- Actual result: X Often less than 2000
+- This is a race condition

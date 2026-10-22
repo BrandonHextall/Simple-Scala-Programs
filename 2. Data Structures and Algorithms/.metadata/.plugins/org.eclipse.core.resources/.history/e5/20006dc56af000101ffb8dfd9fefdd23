@@ -1,0 +1,20 @@
+package main;
+
+import lib.*;
+import java.util.concurrent.*;
+
+
+public class MathsThread1App {
+
+	public static void main(String[] args) throws InterruptedException {
+		Counter counter = new Counter(5);
+		Semaphore mutex = new Semaphore(2);
+		MathsThread1 m1 = new MathsThread1(counter, mutex);
+		MathsThread2 m2 = new MathsThread2(counter, mutex);
+		m1.start();
+		m2.start();
+		m1.join();
+		m2.join();
+		System.out.println(counter.getValue());
+	}
+}

@@ -1,0 +1,19 @@
+package noSynchronization;
+
+public class RaceConditionExample {
+	public static void main(String[] args) throws InterruptedException{
+		Counter counter = new Counter();
+		
+		Thread t1 = new Worker(counter);
+		Thread t2 = new Worker(counter);
+		
+		t1.start(); // Add description
+		t2.start(); // Add description
+		
+		t1.join(); // Add description
+		//t2.join(); // Add description
+		
+		System.out.println("Final count: " + counter.count);
+	}
+
+}

@@ -1,0 +1,16 @@
+package lib;
+
+public class Counter {
+	private int value;
+	
+	public Counter(int val) {
+		value = val;
+	}
+	
+	public void setValue(int val) {
+		value = val;
+	}
+	public int getValue() {
+		return value;
+	}	
+}
